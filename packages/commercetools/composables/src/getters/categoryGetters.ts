@@ -18,6 +18,10 @@ export const getCategoryTree = (category: Category): AgnosticCategoryTree | null
   return buildTree(getRoot(category));
 };
 
+/**
+ * @remarks References:
+ * {@link Category}
+ */
 const categoryGetters: CategoryGetters<Category> = {
   getTree: getCategoryTree
 };
